@@ -10,9 +10,7 @@ POSTGRES = {
     "db": os.getenv("APPLICATION_POSTGRES_DB", "postgres"),
 }
 
-# DB_URI = "postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s" % POSTGRES
-
-DB_URI = "postgresql://dkpfiyqb:v7V6Gi_5ME-nnn5fOLp3frJSTWHQi4ww@dumbo.db.elephantsql.com:5432/dkpfiyqb"
+DB_URI = "postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s" % POSTGRES
 
 SQLALCHEMY_POOL_SIZE = 2
 SQLALCHEMY_MAX_OVERFLOW = 0

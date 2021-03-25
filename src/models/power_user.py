@@ -6,16 +6,11 @@ from flask_sqlalchemy import BaseQuery
 
 class MyQuery(BaseQuery):
 
-    def _get_models(self):
-        """Returns the query's underlying model classes."""
-        return self._mapper_zero().class_
-
     def infinite_paginate(self, before=None, after=None):
-        model_class = self._get_models()[0]
         if after:
-            query = self.filter(model_class.id > after)
+            query = self.filter(PowerUser.id > after).order_by(PowerUser.id.asc())
         elif before:
-            query = self.filter(model_class.id < before)
+            query = self.filter(PowerUser.id < before).order_by(PowerUser.id.desc())
         else:
             query = self
         return query

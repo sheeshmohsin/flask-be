@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  flask-api:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      APPLICATION_POSTGRES_USER: dkpfiyqb
+      APPLICATION_POSTGRES_PW: v7V6Gi_5ME-nnn5fOLp3frJSTWHQi4ww
+      APPLICATION_POSTGRES_HOST: dumbo.db.elephantsql.com
+      APPLICATION_POSTGRES_PORT: 5432
+      APPLICATION_POSTGRES_DB: dkpfiyqb
