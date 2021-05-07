@@ -27,17 +27,25 @@ User List API with pagination and filter support. Not just a regular API, wonder
 
 1. Clone the project first using below command.
 
-    ```$ git clone https://github.com/sheeshmohsin/flask-be/```
+    ```bash
+    $ git clone https://github.com/sheeshmohsin/flask-be/
+    ```
 
 2. Make sure docker and docker-compose is installed in your system, and run below commands next
 
-    ```$ cd flask-be```
+    ```bash
+    $ cd flask-be
+    ```
     
-    ```$ docker-compose up```
+    ```bash
+    $ docker-compose up
+    ```
 
 3. And you'll see your server running right there, head over the url and follow above API documentation.
 
 4. If you want to daemonize the server, run below command::
 
-    ```$ docker-compose up -d```
+    ```bash
+    $ docker-compose up -d
+    ```
     
